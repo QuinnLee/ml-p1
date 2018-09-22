@@ -22,6 +22,9 @@ Run commands in the `\src` directory, `python model_train.py --dataset opts_digi
 3. To generate performance measures, including validation, iteration, timing, and learning curves, run the main() function in the 'model_evaluation.py' module. This will output various .png plots and .csv result tables in the 'plots/<learner>' and 'results/<learner>' folders, where <learner> is the name/type of learner being trained.
 Run commands in the `\src` directory, `python model_evaluation.py` to evaluate both trained models
 
+TL:DR - To run all training and evaluation run the command below
+`python model_train.py --dataset opts_digit && python model_train.py --dataset abalone && python model_evaluation.py`
+
 ## Credits and References
 All implementations used for this assignment were taken directly from the Python scikit-learn library (http://scikit-learn.org).
 

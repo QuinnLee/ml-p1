@@ -145,15 +145,12 @@ if __name__ == '__main__':
     # set scoring function
     scorer = make_scorer(balanced_accuracy)
 
-    digits_path = get_abspath('digits.csv', 'data')
-    digits_df = pd.read_csv(digits_path)
     contraceptive_path = get_abspath('contraceptive.csv', 'data')
     contraceptive_df = pd.read_csv(contraceptive_path)
     abalone_path = get_abspath('abalone.csv', 'data')
     abalone_df = pd.read_csv(abalone_path)
 
     dfs = {
-        'digits': digits_df,
         'contraceptive': contraceptive_df,
         'abalone': abalone_df,
     }

@@ -43,7 +43,7 @@ def basic_results(grid, X_test, y_test, data_name, clf_name):
 
     # write results to a combined results file
     parentdir = 'results'
-    resfile = get_abspath('combined_results.csv', parentdir)
+    resfile = get_abspath('combined_results.txt', parentdir)
     with open(resfile, 'a') as f:
         f.write('{}|{}|{}|{}|{}|{}\n'.format(clf, dn, bs, ts, sf, bp))
 
@@ -313,8 +313,6 @@ if __name__ == '__main__':
     scorer = make_scorer(balanced_accuracy)
 
     # load datasets
-    digits_path = get_abspath('digits.csv', 'data')
-    digits_df = pd.read_csv(digits_path)
     contraceptive_path = get_abspath('contraceptive.csv', 'data')
     contraceptive_df = pd.read_csv(contraceptive_path)
 
